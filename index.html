@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang='pt'>
+ <head>
+  <title>Miguel Pinheiro Marques - Mastering</title>
+  <meta charset='utf-8'>
+  <style>
+	  :root {
+		--system-fonts: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+		--mono-fonts: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+		--serif-fonts: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+	  }
+	  
+	  body {
+		color-scheme: light dark;
+		background-color: color-mix(in srgb, Canvas, CanvasText 2.5%);
+		color: color-mix(in srgb, CanvasText, Canvas 2.5%);
+		font-family: var(--system-fonts);
+		@media screen and (min-width: 64em) { }
+	  }
+	  
+	  p {
+			font-size: 1.1em;
+			line-height: calc(1ex / 0.32);
+			margin: calc(1ex / 0.32) 0;
+			letter-spacing: normal;
+			text-rendering: optimizeLegibility;
+		}
+		
+	  h1, h2, h3, h4{ 
+	  	font-family: var(--serif-fonts);
+	  	font-weight: 600;
+		color: AccentColor;
+		letter-spacing: -1px;
+		text-rendering: geometricPrecision;
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-font-smoothing: antialiased !important;		
+	  }
+	  
+	  h1 {
+		  font-size: 2.5em;
+		  line-height: calc(1ex / 0.42);
+		  margin: calc(1ex / 0.42) 0;
+	  }
+	  
+	  h2 {
+		  font-size: 2em;
+		  line-height: calc(1ex / 0.42);
+		  margin: calc(1ex / 0.42) 0;
+	  }
+	  
+	  h3 {
+		  font-size: 1.75em;
+		  line-height: calc(1ex / 0.38);
+		  margin: calc(1ex / 0.38) 0;
+	  }
+	  
+	  h4 {
+		  font-size: 1.5em;
+		  line-height: calc(1ex / 0.37);
+		  margin: calc(1ex / 0.37) 0;
+	  }
+  </style>
+ </head>
+ <body>
+	<header>
+		<h1>Miguel Pinheiro Marques</h1>
+ 	    <h4>Mastering engineer based in Porto, Portugal</h4>
+		<img
+		  src="miguel-1024.jpg"
+		  srcset="
+			miguel-640.webp 640w,
+			miguel-1024.webp 1024w,
+			miguel-1920.webp 1920w,
+			miguel-2560.webp 2560w,
+			miguel-5120.webp 5120w
+		  "
+		  sizes="
+			(max-width: 640px) 100vw,
+			50vw
+		  "
+		  alt="Responsive image example"
+		/>
+ 	</header>
+	 <section class="about">
+		 <h2>Bio</h2>
+		 <h4>About me</h4>
+		 <p>Miguel is one of the most renowned Portuguese mastering engineers. He started his path in audio making records at Estúdios Sá da Bandeira, but soon found his passion in mastering which led him to pursue this craft as a career more than a decade ago. Since then he has worked with some of the biggest artists in Portugal and also with new emerging acts, mastering hundreds of releases for both major and independent labels, released nationally and internationally across all music genres.</p>
+	 </section>
+	 <section class="credits">
+		 <h2>Credits</h2>
+		 <h4>Some artists I've worked with</h4>
+		 <p>Mocky, x or size, GNR, S. Pedro, Capitão Fausto, Mão Morta, Glockenwise, Miguel Araújo, Diane Keaton, Tó Trips, Diabo na Cruz, FEE., Ana Moura, Bárbara Eugênia, Fernando Daniel, Sean Riley & The Slowriders, Diogo Piçarra, Rui Reininho, Miguel Angelo, Xutos & Pontapés, You Can’t Win, Charlie Brown, noiserv, Três Tristes Tigres, Edu Monteiro, The Black Mamba, Balla, João Gil, Keep Razors Sharp, Salto, OIOAI, Mafalda Veiga, White Haus, Sensible Soccers, Amor Electro, Manel Cruz, Cavaliers of Fun, Stereoboy, Madrepaz, Bloom/JP Simões, SEA, April Ivy, Isaura, Cláudia Pascoal, FRED, Os Quatro e Meia, Beatriz Pessoa, Diana Castro, Tomás Adrião, Elas/Marisa Liz & Aurea, Espírito/Tóli César Machado, Roger Plexico, Geleia Lenta, SirAiva, Elvira, Filho da Mãe, Julius Gabriel, Pedro Melo Alves, IVVVO, Angélica Salvi, Frankie Chavez, Mirror People, LaBaq...</p>
+	 </section>
+	 <section class="contact">
+		 <h2>Get in Touch</h2>
+		 <h4>Fill out the form below and I'll get back to you as soon as possible.</h4>
+	 
+	   <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+	 
+		 <input type="hidden" name="access_key" value="44c30d37-f744-44c4-9a4c-d7626123961f" />
+		 <input type="hidden" name="subject" value="Website Contact Form" />
+		 <input type="hidden" name="from_name" value="miguelpinheiromarques.com" />
+		 <input type="hidden" name="redirect" value="https://miguelpinheiromarques.com/thanks.html">
+	 
+		 <div class="form-group-container">
+		   <div class="form-group">
+			 <label for="name" class="form-label">Name *</label>
+			 <input id="name" name="name" class="form-input" placeholder="Your name" type="text" required />
+		   </div>
+		   <div class="form-group">
+			 <label for="email" class="form-label">Email *</label>
+			 <input id="email" name="email" class="form-input" placeholder="Your email" type="email" required />
+		   </div>
+		   <div class="form-group">
+			 <label for="phone" class="form-label">Phone</label>
+			 <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text" />
+		   </div>
+		   <div class="form-group">
+			 <label for="message" class="form-label">Message *</label>
+			 <textarea class="form-textarea" id="message" name="message" placeholder="Your message" required></textarea>
+		   </div>
+		 </div>
+		 <button class="form-submit" type="submit">Send Message</button>
+	   </form>
+	 
+	 </section>
+ </body>
+</html>
