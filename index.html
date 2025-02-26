@@ -14,12 +14,12 @@
 		color: color-mix(in srgb, CanvasText, Canvas 2.5%);
 		font-family: var(--font-mono);
 		text-align: left;
+		font-size: clamp(0.9rem, 1.17rem + -0.348vw, 1.1rem);
 		padding: 0 10% 0 10%;
 		@media screen and (min-width: 64em) { padding: 0 20% 0 20%; }
 	  }
 	  a, a:visited{color:AccentColor}
 	  p {
-			font-size: 0.9em;
 			line-height: calc(1ex / 0.32);
 			margin: calc(1ex / 0.32) 0;
 			color: color-mix(in srgb, CanvasText, Canvas 35%);			
@@ -37,7 +37,7 @@
 	  }
 	  
 	  h1 {
-		  font-size: 4vw;
+		  font-size: clamp(1.25rem, 0.902rem + 1.739vw, 2.25rem);
 		  line-height: calc(1ex / 0.42);
 		  margin: calc(1ex / 0.42) 0;		
 	  }
@@ -62,7 +62,7 @@
 		  font-weight:300;
 	  }
 	  header{margin-top:60px;}
-	  img{max-width:100%;height:auto;object-fit: contain;}
+	  img{width:100%;max-width:100%;height:auto;object-fit: contain;}
 	  
 	  input{width:100%;height:30px;margin:4px 0 10px 0;background: color-mix(in srgb, Canvas, CanvasText 5%);border:0;outline:0}
 	  input::placeholder,textarea::placeholder {color: color-mix(in srgb, CanvasText, Canvas 65%);}
@@ -82,11 +82,11 @@
 	  .contact{border-top:1px solid;border-bottom:1px solid;padding-bottom:40px;margin-top:40px}
 	  
 	  header h1 {
-		overflow: hidden; /* Ensures the content is not revealed until the animation */
-		border-right: .15em solid AccentColor; /* The typwriter cursor */
-		white-space: nowrap; /* Keeps the content on a single line */
-		margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-		letter-spacing: 0; /* Adjust as needed */
+		overflow: hidden;
+		border-right: .15em solid AccentColor;
+		white-space: nowrap;
+		
+		letter-spacing: 0;
 		animation: 
 		  typing 3.5s steps(40, end),
 		  blink-caret .75s step-end infinite;
